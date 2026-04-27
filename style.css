@@ -59,7 +59,7 @@ NAVBAR
 .logo span { font-size: 0.7rem; color: var(--mid-gray); }
 
 .logo img {
-  height: 25px;
+  height: 50px;
   width: auto;
   display: block;
 }
