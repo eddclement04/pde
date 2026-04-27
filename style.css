@@ -64,6 +64,11 @@ NAVBAR
   display: block;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .navbar ul {
   display: flex;
   list-style: none;
