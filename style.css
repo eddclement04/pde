@@ -42,6 +42,7 @@ button {
 /* =========================
 NAVBAR
 ========================= */
+
 .navbar {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -55,25 +56,23 @@ NAVBAR
   border-bottom: 1px solid var(--border);
 }
 
-.navbar nav {
+/* LOGO LEFT */
 .logo {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.logo h1 { font-size: 1.5rem; font-weight: 700; }
-.logo span { font-size: 0.7rem; color: var(--mid-gray); }
-
 .logo img {
-  height: 70px;
+  height: 70px; /* increased size */
   width: auto;
   display: block;
 }
 
-.logo {
+/* NAV LINKS CENTER */
+.navbar nav {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .navbar ul {
@@ -84,71 +83,17 @@ NAVBAR
   align-items: center;
 }
 
+/* BUTTON RIGHT */
+.navbar .primary-btn {
+  justify-self: end;
+}
+
+/* LINKS */
 .navbar a {
   text-decoration: none;
   color: var(--primary-dark);
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
-}
-
-.navbar a::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: var(--accent-blue);
-  transition: 0.3s;
-}
-
-.navbar a:hover::after,
-.navbar a.active::after { width: 100%; }
-
-.menu-toggle {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-}
-
-/* =========================
-BUTTONS
-========================= */
-.btn {
-  padding: 12px 22px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.primary-btn {
-  background: linear-gradient(135deg, var(--accent-blue), var(--accent-light));
-  color: white;
-  box-shadow: 0 10px 25px var(--accent-glow);
-}
-
-.primary-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 35px var(--accent-glow);
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.secondary-btn {
-  background: transparent;
-  border: 1px solid var(--accent-blue);
-  color: var(--accent-blue);
-}
-
-.secondary-btn:hover {
-  background: var(--accent-blue);
-  color: white;
 }
 
 /* =========================
